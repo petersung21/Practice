@@ -36,13 +36,23 @@ LinkedList::Node* LinkedList::ListSearch(LinkedList::DataItem value, LinkedList:
 void LinkedList::InsertNewLast(LinkedList::DataItem value, LinkedList::Node *L)
 {
     Node* end = L;
+    
+    if (end == NULL)
+    {
+        end = new Node;
+        end->data = value;
+        end->next = NULL;
+        return;
+    }
+    
     while (end -> next != NULL)
     {
         end = end->next;
     }
-    
+    end->next = new Node;
     end->next->data = value;
     end->next->next = NULL;
+    
 }
 void LinkedList::DeleteLastNode(LinkedList::Node *L)
 {
