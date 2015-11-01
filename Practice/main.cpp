@@ -7,10 +7,23 @@
 //
 
 #include <iostream>
+#include "LinkedList.h"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    
+    //LinkedList linkedList = new LinkedList();
+    
+    LinkedList::Node *head;
+    LinkedList::Node *nodePtr;
+    LinkedList::DataItem searchValue;
+    
+    head = NULL;
+    
+    LinkedList::PrintList(head);
+    LinkedList::InsertNewLast(10, head);
+    LinkedList::PrintList(head);
     
     
     return 0;

@@ -10,5 +10,17 @@
 #define __Practice__LinkedList__
 
 #include <stdio.h>
+#include <iostream>
+
+class LinkedList
+{
+public:
+    struct Node;
+    typedef int DataItem;
+    Node* ListSearch(DataItem value, Node *head);
+    static void InsertNewLast(DataItem value, Node *L);
+    static void DeleteLastNode(Node *L);
+    static void PrintList(Node *head);
+};
 
 #endif /* defined(__Practice__LinkedList__) */
