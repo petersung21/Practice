@@ -10,6 +10,7 @@
 #define __Practice__SequentialList__
 
 #include <stdio.h>
+#include <iostream>
 
 class SequentialList
 {
