@@ -18,8 +18,8 @@ public:
     struct Node;
     typedef int DataItem;
     Node* ListSearch(DataItem value, Node *head);
-    static void InsertNewLast(DataItem value, Node *L);
-    static void DeleteLastNode(Node *L);
+    static void InsertNewLast(DataItem value, Node **L);
+    static void DeleteLastNode(Node **L);
     static void PrintList(Node *head);
 };
 

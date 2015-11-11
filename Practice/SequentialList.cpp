@@ -7,3 +7,7 @@
 //
 
 #include "SequentialList.h"
+
+SequentialList::SequentialList(unsigned int cap){
+    
+}

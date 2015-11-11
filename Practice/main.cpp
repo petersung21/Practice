@@ -22,7 +22,7 @@ int main(int argc, const char * argv[]) {
     head = NULL;
     
     LinkedList::PrintList(head);
-    LinkedList::InsertNewLast(10, head);
+    LinkedList::InsertNewLast(10, &head);
     LinkedList::PrintList(head);
     
     

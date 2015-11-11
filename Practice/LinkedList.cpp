@@ -33,17 +33,16 @@ LinkedList::Node* LinkedList::ListSearch(LinkedList::DataItem value, LinkedList:
     
     return NULL;
 }
-void LinkedList::InsertNewLast(LinkedList::DataItem value, LinkedList::Node *L)
+void LinkedList::InsertNewLast(LinkedList::DataItem value, LinkedList::Node **L)
 {
-    Node* end = L;
+    Node* end = *L;
     
     if (end == NULL)
     {
         end = new Node;
         end->data = value;
         end->next = NULL;
-        L = new Node;
-        *L = *end;
+        *L = end;
         return;
     }
     
@@ -54,12 +53,13 @@ void LinkedList::InsertNewLast(LinkedList::DataItem value, LinkedList::Node *L)
     end->next = new Node;
     end->next->data = value;
     end->next->next = NULL;
+    *L = end;
     
     //*L = end;
 }
-void LinkedList::DeleteLastNode(LinkedList::Node *L)
+void LinkedList::DeleteLastNode(LinkedList::Node **L)
 {
-    Node* end = L;
+    Node* end = *L;
     if (end == NULL){
         return;
     } else if (end -> next == NULL){

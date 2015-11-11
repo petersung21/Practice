@@ -68,9 +68,9 @@ private:
     
 private:
     //Copy constructor
-    SequentialList(const SequentialList& rhs){}
+    SequentialList(const SequentialList& rhs);
     //Assignment operator
-    SequentialList& operator=(const SequentialList& rhs){}
+    SequentialList& operator=(const SequentialList& rhs);
     
 };
 
