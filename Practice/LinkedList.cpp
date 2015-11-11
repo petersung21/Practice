@@ -42,6 +42,8 @@ void LinkedList::InsertNewLast(LinkedList::DataItem value, LinkedList::Node *L)
         end = new Node;
         end->data = value;
         end->next = NULL;
+        L = new Node;
+        *L = *end;
         return;
     }
     
@@ -53,6 +55,7 @@ void LinkedList::InsertNewLast(LinkedList::DataItem value, LinkedList::Node *L)
     end->next->data = value;
     end->next->next = NULL;
     
+    //*L = end;
 }
 void LinkedList::DeleteLastNode(LinkedList::Node *L)
 {
@@ -69,6 +72,7 @@ void LinkedList::DeleteLastNode(LinkedList::Node *L)
         }
         end->next = NULL;
     }
+    
     
 }
 void LinkedList::PrintList(LinkedList::Node *head)

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0743829F1BE19CDB001AD010 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0743829E1BE19CDB001AD010 /* main.cpp */; };
 		074382A81BE594EC001AD010 /* LinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 074382A61BE594EC001AD010 /* LinkedList.cpp */; };
+		07F467C51BF2CE98007FA5F3 /* SequentialList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F467C31BF2CE98007FA5F3 /* SequentialList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		0743829E1BE19CDB001AD010 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		074382A61BE594EC001AD010 /* LinkedList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 		074382A71BE594EC001AD010 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		07F467C31BF2CE98007FA5F3 /* SequentialList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SequentialList.cpp; sourceTree = "<group>"; };
+		07F467C41BF2CE98007FA5F3 /* SequentialList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequentialList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				0743829E1BE19CDB001AD010 /* main.cpp */,
 				074382A61BE594EC001AD010 /* LinkedList.cpp */,
 				074382A71BE594EC001AD010 /* LinkedList.h */,
+				07F467C31BF2CE98007FA5F3 /* SequentialList.cpp */,
+				07F467C41BF2CE98007FA5F3 /* SequentialList.h */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074382A81BE594EC001AD010 /* LinkedList.cpp in Sources */,
+				07F467C51BF2CE98007FA5F3 /* SequentialList.cpp in Sources */,
 				0743829F1BE19CDB001AD010 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
