@@ -72,8 +72,6 @@ void LinkedList::DeleteLastNode(LinkedList::Node **L)
         }
         end->next = NULL;
     }
-    
-    
 }
 void LinkedList::PrintList(LinkedList::Node *head)
 {

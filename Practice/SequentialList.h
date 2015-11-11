@@ -59,7 +59,7 @@ public:
     
 //Member variables
 private:
-    //Pointer to the blockn of memory allocated to store list
+    //Pointer to the block of memory allocated to store list
     DataType *data_;
     //Capacity of the list
     unsigned int capacity_;

@@ -24,6 +24,11 @@ int main(int argc, const char * argv[]) {
     LinkedList::PrintList(head);
     LinkedList::InsertNewLast(10, &head);
     LinkedList::PrintList(head);
+    LinkedList::InsertNewLast(10, &head);
+    LinkedList::PrintList(head);
+    LinkedList::DeleteLastNode(&head);
+    LinkedList::PrintList(head);
+    
     
     
     return 0;
