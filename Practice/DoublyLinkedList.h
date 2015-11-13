@@ -10,6 +10,7 @@
 #define __Practice__DoublyLinkedList__
 
 #include <stdio.h>
+#include <iostream>
 
 class DoublyLinkedList
 {
@@ -39,9 +40,7 @@ public:
     
     //Accessors
     unsigned int size() const;
-    unsigned int capacity() const;
     bool empty() const;
-    bool full() const;
     DataType select(unsigned int index) const;
     unsigned int search(DataType val) const;
     void print() const;
