@@ -8,6 +8,11 @@
 
 #include "DynamicStack.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+using namespace std;
 
 DynamicStack::DynamicStack(){
     
@@ -30,11 +35,15 @@ DynamicStack::StackItem DynamicStack::pop(){
 }
 
 bool DynamicStack::empty() const{
-    
+    if (size_ == 0){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 int DynamicStack::size() const{
-    
+    return size_;
 }
 
 void DynamicStack::print() const{

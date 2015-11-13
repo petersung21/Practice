@@ -10,6 +10,7 @@
 #define __Practice__CircularQueue__
 
 #include <stdio.h>
+#include <iostream>
 
 class CircularQueue
 {

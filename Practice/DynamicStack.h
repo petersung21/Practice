@@ -10,6 +10,7 @@
 #define __Practice__DynamicStack__
 
 #include <stdio.h>
+#include <iostream>
 
 class DynamicStack
 {

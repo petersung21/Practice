@@ -8,6 +8,12 @@
 
 #include "CircularQueue.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+using namespace std;
+
 CircularQueue::CircularQueue(){
     
 }
@@ -33,11 +39,15 @@ CircularQueue::QueueItem CircularQueue::peek() const{
 }
 
 bool CircularQueue::empty() const{
-    
+    if (size_ == 0){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 int CircularQueue::size() const{
-    
+    return size_;
 }
 
 void CircularQueue::print() const{
