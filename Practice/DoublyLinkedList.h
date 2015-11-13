@@ -62,7 +62,7 @@ private:
     
 private:
     //Copy linked list
-    DoublyLinkedList(const DoublyLinkedList& rhs){}
+    DoublyLinkedList(const DoublyLinkedList& rhs);
     DoublyLinkedList& operator=(const DoublyLinkedList& rhs);
     
 };
