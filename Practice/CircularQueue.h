@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <iostream>
+#include "DoublyLinkedList.h"
 
 class CircularQueue
 {
@@ -21,7 +22,6 @@ public:
     static const QueueItem EMPTY_QUEUE;
     
     CircularQueue();
-    CircularQueue(unsigned int capacity);
     ~CircularQueue();
     
     bool enqueue(QueueItem value);
@@ -29,19 +29,15 @@ public:
     QueueItem peek() const;
     
     bool empty() const;
-    bool full() const;
-    int size() const;
     void print() const;
     
 private:
-    CircularQueue(const CircularQueue& other) {}
+    CircularQueue(const CircularQueue& other);
     CircularQueue operator=(const CircularQueue& other);
     
 private:
-    QueueItem *items_;
-    int head_, tail_;
-    int capacity_;
-    int size_;
+    //Member variables
+    DoublyLinkedList* doublyLinkedList;
 };
 
 #endif /* defined(__Practice__CircularQueue__) */

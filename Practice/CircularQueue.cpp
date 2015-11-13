@@ -15,49 +15,52 @@
 using namespace std;
 
 CircularQueue::CircularQueue(){
-    
+    doublyLinkedList = new DoublyLinkedList();
 }
 
-CircularQueue::CircularQueue(unsigned int capacity){
-    
+
+CircularQueue::~CircularQueue(){
+    if (doublyLinkedList != NULL)
+    {
+        delete doublyLinkedList;
+    }
 }
 
-CircularQueue:~CircularQueue(){
-    
-}
-
-void CircularQueue::enqueue(QueueItem value){
-    
-}
-
-CircularQueue::QueueItem CircularQueue::dequeue(){
-    
-}
-
-CircularQueue::QueueItem CircularQueue::peek() const{
-    
-}
-
-bool CircularQueue::empty() const{
-    if (size_ == 0){
+bool CircularQueue::enqueue(QueueItem value){
+    if (doublyLinkedList->size() != 0){
+        doublyLinkedList->insert_front(value);
         return true;
     } else {
         return false;
     }
 }
 
-int CircularQueue::size() const{
-    return size_;
+CircularQueue::QueueItem CircularQueue::dequeue(){
+    int returnInt = doublyLinkedList->select(doublyLinkedList->size()-1);
+    doublyLinkedList->remove_back();
+    return returnInt;
 }
 
+CircularQueue::QueueItem CircularQueue::peek() const{
+    int returnInt = doublyLinkedList->select(doublyLinkedList->size()-1);
+    doublyLinkedList->remove_back();
+    return returnInt;
+}
+
+bool CircularQueue::empty() const{
+    return doublyLinkedList->size();
+}
+
+
 void CircularQueue::print() const{
-    
+    doublyLinkedList->print();
 }
 
 CircularQueue::CircularQueue(const CircularQueue& other){
-    
+    doublyLinkedList = new DoublyLinkedList(*other.doublyLinkedList);
 }
 
 CircularQueue CircularQueue::operator=(const CircularQueue &other){
-    
+    CircularQueue* circularQueue = new CircularQueue(other);
+    return *circularQueue;
 }
