@@ -15,27 +15,34 @@
 using namespace std;
 
 DynamicStack::DynamicStack(){
-    
+    doublyLinkedList = new DoublyLinkedList();
 }
 
-DynamicStack::DynamicStack(unsigned int capacity){
-    
-}
 
 DynamicStack::~DynamicStack(){
-    
+    if (doublyLinkedList != NULL)
+    {
+        delete doublyLinkedList;
+    }
 }
 
 void DynamicStack::push(StackItem value){
-    
+    doublyLinkedList->insert_back(value);
 }
 
 DynamicStack::StackItem DynamicStack::pop(){
-    
+    int returnInt = doublyLinkedList->select(doublyLinkedList->size()-1);
+    doublyLinkedList->remove_back();
+    return returnInt;
+}
+
+DynamicStack::StackItem DynamicStack::peek() const{
+    int returnInt = doublyLinkedList->select(doublyLinkedList->size()-1);
+    return returnInt;
 }
 
 bool DynamicStack::empty() const{
-    if (size_ == 0){
+    if (doublyLinkedList->size() == 0){
         return true;
     } else {
         return false;
@@ -43,17 +50,18 @@ bool DynamicStack::empty() const{
 }
 
 int DynamicStack::size() const{
-    return size_;
+    return doublyLinkedList->size();
 }
 
 void DynamicStack::print() const{
-    
+    doublyLinkedList->print();
 }
 
 DynamicStack::DynamicStack(const DynamicStack& other){
-    
+    doublyLinkedList = new DoublyLinkedList(*other.doublyLinkedList);
 }
 
 DynamicStack DynamicStack::operator=(const DynamicStack &other){
-    
+    DynamicStack* dynamicStack = new DynamicStack(other);
+    return *dynamicStack;
 }

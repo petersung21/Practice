@@ -28,7 +28,16 @@ DoublyLinkedList::DoublyLinkedList(){
 }
 
 DoublyLinkedList::~DoublyLinkedList(){
-    size_ = 0;
+    if (head_ != NULL && tail_ != NULL){
+        Node* selectedNode = head_;
+        Node* nextNode = head_;
+        while (selectedNode->next != NULL){
+            nextNode = selectedNode->next;
+            delete selectedNode;
+            selectedNode = nextNode;
+        }
+        delete tail_;
+    }
 }
 
 

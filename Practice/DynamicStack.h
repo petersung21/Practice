@@ -11,17 +11,18 @@
 
 #include <stdio.h>
 #include <iostream>
+#include "DoublyLinkedList.h"
 
 class DynamicStack
 {
     friend class DynamicStackTest;
 public:
+    
     typedef int StackItem;
     //Indicator of empty stack
     static const StackItem EMPTY_STACK;
     
     DynamicStack();
-    DynamicStack(unsigned int capacity);
     ~DynamicStack();
     
     void push(StackItem value);
@@ -34,14 +35,12 @@ public:
 
 private:
     //Copy constructor
-    DynamicStack(const DynamicStack& other){}
+    DynamicStack(const DynamicStack& other);
     DynamicStack operator=(const DynamicStack& other);
     
 private:
-    StackItem* items_;
-    int capacity_;
-    int size_;
-    int init_capacity_;
+    //Member variables
+    DoublyLinkedList* doublyLinkedList;
     
 };
 

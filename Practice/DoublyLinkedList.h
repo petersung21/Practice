@@ -60,7 +60,7 @@ private:
     Node* tail_;
     unsigned int size_;
     
-private:
+public:
     //Copy linked list
     DoublyLinkedList(const DoublyLinkedList& rhs);
     DoublyLinkedList& operator=(const DoublyLinkedList& rhs);
