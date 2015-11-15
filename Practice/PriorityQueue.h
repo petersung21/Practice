@@ -10,6 +10,8 @@
 #define __Practice__PriorityQueue__
 
 #include <stdio.h>
+#include <iostream>
+#include <stdio.h>
 
 class PriorityQueue
 {

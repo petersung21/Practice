@@ -301,7 +301,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "SequentialList::size()"
+            landmarkName = "SequentialList::~SequentialList()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -317,7 +317,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
-            landmarkName = "SequentialList::operator=(const SequentialList&amp; rhs)"
+            landmarkName = "SequentialList::search(DataType val)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
