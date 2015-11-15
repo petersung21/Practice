@@ -13,6 +13,8 @@
 		07F467C81BF419BB007FA5F3 /* DoublyLinkedList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F467C61BF419BB007FA5F3 /* DoublyLinkedList.cpp */; };
 		07F467CB1BF55E67007FA5F3 /* DynamicStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F467C91BF55E67007FA5F3 /* DynamicStack.cpp */; };
 		07F467CE1BF5621B007FA5F3 /* CircularQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F467CC1BF5621B007FA5F3 /* CircularQueue.cpp */; };
+		07F467D11BF8431C007FA5F3 /* PriorityQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F467CF1BF8431C007FA5F3 /* PriorityQueue.cpp */; };
+		07F467D41BF84329007FA5F3 /* BinarySearchTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F467D21BF84329007FA5F3 /* BinarySearchTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,10 @@
 		07F467CA1BF55E67007FA5F3 /* DynamicStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicStack.h; sourceTree = "<group>"; };
 		07F467CC1BF5621B007FA5F3 /* CircularQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularQueue.cpp; sourceTree = "<group>"; };
 		07F467CD1BF5621B007FA5F3 /* CircularQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularQueue.h; sourceTree = "<group>"; };
+		07F467CF1BF8431C007FA5F3 /* PriorityQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PriorityQueue.cpp; sourceTree = "<group>"; };
+		07F467D01BF8431C007FA5F3 /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
+		07F467D21BF84329007FA5F3 /* BinarySearchTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTree.cpp; sourceTree = "<group>"; };
+		07F467D31BF84329007FA5F3 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 				07F467CA1BF55E67007FA5F3 /* DynamicStack.h */,
 				07F467CC1BF5621B007FA5F3 /* CircularQueue.cpp */,
 				07F467CD1BF5621B007FA5F3 /* CircularQueue.h */,
+				07F467CF1BF8431C007FA5F3 /* PriorityQueue.cpp */,
+				07F467D01BF8431C007FA5F3 /* PriorityQueue.h */,
+				07F467D21BF84329007FA5F3 /* BinarySearchTree.cpp */,
+				07F467D31BF84329007FA5F3 /* BinarySearchTree.h */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -143,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F467D41BF84329007FA5F3 /* BinarySearchTree.cpp in Sources */,
+				07F467D11BF8431C007FA5F3 /* PriorityQueue.cpp in Sources */,
 				074382A81BE594EC001AD010 /* LinkedList.cpp in Sources */,
 				07F467C51BF2CE98007FA5F3 /* SequentialList.cpp in Sources */,
 				0743829F1BE19CDB001AD010 /* main.cpp in Sources */,
