@@ -29,15 +29,24 @@ PriorityQueue::DataType PriorityQueue::max() const {
 }
 
 bool PriorityQueue::empty() const{
-    
+    if(size_ == 0){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 bool PriorityQueue::full() const{
-    
+    if (size_ == capacity_)
+    {
+        return true;
+    }else {
+        return false;
+    }
 }
 
 unsigned int PriorityQueue::size() const{
-    
+    return size_;
 }
 
 void PriorityQueue::print() const{

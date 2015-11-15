@@ -41,7 +41,7 @@ BinarySearchTree::DataType BinarySearchTree::max() const {
 }
 
 unsigned int BinarySearchTree::size() const{
-    
+    return size_;
 }
 
 unsigned int BinarySearchTree::depth() const {
